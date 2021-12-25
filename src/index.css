@@ -182,6 +182,8 @@ footer {
   background-color: #605f61;
   padding: 5px;
   height: 40px;
+  position: absolute;
+  bottom: 0;
 }
 
 #author-link {

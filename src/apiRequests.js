@@ -1,6 +1,9 @@
 async function fetchWeather(city) {
   let data = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=a81690436961427abc094857212512&q=${city}&days=10&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=a81690436961427abc094857212512&q=${city}&days=10&aqi=no&alerts=no`,
+    {
+      mode: "cors",
+    }
   );
   data = await data.json();
 
