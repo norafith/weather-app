@@ -1,0 +1,205 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #605f61;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #f0d9ff, #f3f1f5);
+  border-radius: 50px;
+}
+
+body {
+  background-color: #353535;
+  color: #f3f1f5;
+  font-size: 18px;
+  margin: 0;
+}
+
+* {
+  color: #f3f1f5;
+  font-size: 18px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+header {
+  background-color: #605f61;
+  border-bottom: 2px solid #f0d9ff;
+  padding: 5px;
+  text-align: center;
+}
+
+header > * {
+  margin: 3px;
+}
+
+button {
+  background-color: #bfa2db;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 0 3px #353535;
+  cursor: pointer;
+  transition: transform 0.1s linear, box-shadow 0.1s linear;
+}
+
+button.active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #f0d9ff;
+  transition: all 0.5s ease;
+}
+
+input:focus {
+  border-bottom: 3px solid #f3f1f5;
+  outline: none;
+}
+
+input::placeholder {
+  color: #f3f1f5;
+}
+
+main > * {
+  margin: 25px;
+}
+
+#location-data > span {
+  font-size: 3em;
+}
+
+#city-name::after {
+  content: ",";
+}
+
+.forecast-container {
+  flex-shrink: 0;
+  display: inline-flex;
+  width: 300px;
+  height: 450px;
+  margin: 15px;
+  border-radius: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f0d9ff;
+  background: linear-gradient(180deg, #605f61 -25%, transparent);
+}
+
+.date {
+  font-size: 1.75em;
+  color: #f0d9ff;
+}
+
+.temperature {
+  font-size: 1.5em;
+}
+
+.weather-img {
+  width: 100px;
+  height: 100px;
+}
+
+#today-hour-forecast {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+/* Temperature things */
+
+.celcius::after {
+  content: "°C";
+}
+
+.fahrenheit::after {
+  content: "°F";
+}
+
+/* Toggle element */
+#change-temp-value {
+  display: inline-flex;
+  position: relative;
+  color: white;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: space-around;
+  background-color: #353535;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+#change-temp-value.active {
+  background-color: #bfa2db;
+}
+
+.change-temp-text {
+  z-index: 500;
+}
+
+#toggle-circle {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-color: #bfa2db;
+  border-radius: 50%;
+  transition: left 0.5s ease, background 0.5s ease;
+  z-index: 0;
+}
+
+#toggle-circle.active {
+  left: 30px;
+  background-color: #353535;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #f0d9ff;
+  background-color: #605f61;
+  padding: 5px;
+  height: 40px;
+}
+
+#author-link {
+  text-decoration: none;
+  color: #f0d9ff;
+}
+
+#author-link:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+  .forecast-container {
+    width: 200px;
+    height: 300px;
+  }
+
+  main > * {
+    margin: 25px 10px;
+  }
+}

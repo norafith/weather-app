@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+  <title>Погода</title>
+</head>
+<body>
+  <header>
+    <input id="city-input" type="text" placeholder="Город..."/>
+    <button id="city-submit">Искать!</button>
+    <span id="change-temp-value">
+      <span class="change-temp-text">C</span>
+      <span id="toggle-circle"></span>
+      <span class="change-temp-text">F</span>
+    </span>
+  </header>
+  <main>
+    <section id="location-data">
+      <span id="city-name"></span>
+      <span id="country-name"></span>
+    </section>
+    <section id="today-weather-main">
+      <h3>Погода сейчас: </h3>
+      <div class="forecast-container" id="curr-weather">
+        <span class="date"></span>
+        <img class="weather-img"></span>
+        <span class="temperature"></span>
+      </div>
+      <h3>Почасовой прогноз на сегодня: </h3>
+      <div id="today-hour-forecast">
+      </div>
+    </section>
+    <section id="forecast-main">
+      <h3>Прогноз на 3 дня: </h3>
+    </section>
+  </main>
+  <footer>
+    <span>made by <a id="author-link" href="https://github.com/norafith">norafith</a></span>
+  </footer>
+  <script src="main.js"></script>
+</body>
