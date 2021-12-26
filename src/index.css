@@ -80,10 +80,6 @@ main > * {
   margin: 25px;
 }
 
-#location-data {
-  word-break: break-word;
-}
-
 #location-data > span {
   font-size: 3em;
 }
