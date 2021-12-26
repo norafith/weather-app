@@ -80,8 +80,10 @@ main > * {
   margin: 25px;
 }
 
-#location-data > span {
+#location-data > p {
   font-size: 3em;
+  margin: 5px;
+  word-break: break-all;
 }
 
 #city-name::after {
