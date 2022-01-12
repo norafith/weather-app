@@ -192,9 +192,16 @@ function clearForecast() {
     "#forecast-main > .forecast-container"
   );
   const forecastMainCont = document.querySelector("#forecast-main");
-
   forecastMainItems.forEach((item) => {
     forecastMainCont.removeChild(item);
+  });
+
+  const todayHourForecastItems = document.querySelectorAll(
+    "#today-hour-forecast > .forecast-container"
+  );
+  const todayHourForecastCont = document.querySelector("#today-hour-forecast");
+  todayHourForecastItems.forEach((item) => {
+    todayHourForecastCont.removeChild(item);
   });
 }
 

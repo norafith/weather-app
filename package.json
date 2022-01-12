@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^27.4.5",
     "css-loader": "^6.5.1",
     "date-fns": "^2.27.0",
+    "jest": "^27.4.5",
     "style-loader": "^3.3.1",
     "translate": "^1.4.1",
     "webpack": "^5.65.0"

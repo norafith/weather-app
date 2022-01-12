@@ -5,7 +5,6 @@ import translate from "translate";
 
 function handler(city) {
   clearForecast();
-
   fetchWeather(city)
     .then((data) => renderWeather(data))
     .catch((err) => {
